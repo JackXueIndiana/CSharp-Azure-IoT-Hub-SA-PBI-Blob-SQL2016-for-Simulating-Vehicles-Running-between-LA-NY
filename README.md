@@ -25,8 +25,7 @@ Figure 1_1 Running Vehicle Simulator
 
 
 About C# Apps CreateDeviceIdentity and SimulatedDevice
-The original code is from Dominic Betts’ blog, entitled “Get started with Azure IoT Hub for .NET” at https://azure.microsoft.com/en-us/documentation/articles/iot-hub-csharp-csharp-getstarted/.
-
+The original code is from Dominic Betts’ blog, entitled “Get started with Azure IoT Hub for .NET” at https://azure.microsoft.com/en-us/documentation/articles/iot-hub-csharp-csharp-getstart
 As a new requirement in IoT hub, each device should have a unique ID and registered with the hub. Upon successful registration, a device key will be returned from the hub. The C# app CreateDeviceIdentity is for this purpose.
 
 To read in CSV file on the exit points (town name, latitude, longitude, totally 171 such points from LA to NY roughly equal-distance distributed on the route), we installed package Microsoft.VisualBasic as well as Microsoft Azure Service Bus. The attached source code Program.cs contains four classes:
@@ -79,4 +78,4 @@ The stored procedure CheckPoint first get the latest three entries (for a device
 Final Remarks
 We have taken the advantage of IoT Hub rich functions, SQL 2016 new functions, and dynamic update of Power BI dashboard, a function provided by ASA and PBI integration. However, we feel that the C# app SendCloudToDevice should be replaced by implementation of some Azure services. We also noticed that IoT hub has another function: pushing file to device, which we have not touched.
 
-KC Munnings contributed whole logic app/app service/app service plan part as well as db with stored procedures. Help and guidance from Joe Carver, KC Munnings, and Bunty Ranu are greatly appreciated.
+One of my colleagues contributed whole logic app/app service/app service plan part as well as db with stored procedures.
